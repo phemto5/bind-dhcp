@@ -45,7 +45,7 @@ do
 
 
   if [ ${SRV_DIR} = webmin ]; then
-	if [ ! "${WEBMIN_ENABLED}" == "true" ]; then
+	if [ "${WEBMIN_ENABLED}" != "true" ]; then
 	  rm -f ${DATA_DIR}/${SRV_DIR}
 	else
 	  ln -sf ${WEBMIN_DATA_DIR}/etc /etc/webmin
