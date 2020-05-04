@@ -1,5 +1,6 @@
 FROM ubuntu:bionic
 
+EXPOSE 53 680 953 10000
 ENV BIND_USER=bind \
     DATA_DIR=/data \
     DHCP_ENABLED=true \
